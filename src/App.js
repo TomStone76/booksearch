@@ -5,24 +5,24 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <Switch>
+            <Nav />
+            <Route />
+            <Route />
+            <Route />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
 
 export default App;
+
+// `/api/books` (get) - Should return all saved books as JSON.
+
+// * `/api/books` (post) - Will be used to save a new book to the database.
+
+// * `/api/books/:id` 
